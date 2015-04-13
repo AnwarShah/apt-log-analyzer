@@ -1,0 +1,3 @@
+1 - Add support for command line arguments to see only installed, removed, upgraded packages
+2 - Add support to view package installed by times
+3 - Support for viewing changes in different occurence of uses 
