@@ -49,7 +49,7 @@ def extract_package_data(pkgs_info_str)
 
 # remove all `:`, `(` and `)` characters
   pkgs_info_str = pkgs_info_str.collect { |package| package.tr('()', '') }
-  pkgs_info_str = pkgs_info_str.collect { |package| package.tr(':', ' ').strip }
+  pkgs_info_str = pkgs_info_str.collect { |package| package.sub(':', ' ').strip }
 
   package_data  = pkgs_info_str.collect { |package| package.split }
 
